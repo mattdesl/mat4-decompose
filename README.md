@@ -4,6 +4,13 @@
 
 Decomposes a 3D matrix, useful for animations. Code ported from [W3 CSS Spec](http://www.w3.org/TR/css3-transforms/#decomposing-a-3d-matrix). PRs for more tests/robustness/optimizations welcome. 
 
+Order:
+
+- first isolates perspective
+- then determines translation
+- then determines X scale, XY shear, Y scale, XZ and YZ shear, and Z scale
+- then determines quaternion rotation
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/mat4-decompose.png)](https://nodei.co/npm/mat4-decompose/)
