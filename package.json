@@ -1,6 +1,6 @@
 {
   "name": "mat4-decompose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "decomposes a 3D matrix",
   "main": "index.js",
   "license": "MIT",
