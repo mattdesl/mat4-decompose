@@ -35,7 +35,7 @@ var tmpVec4 = [0, 0, 0, 0]
 var row = [ [0,0,0], [0,0,0], [0,0,0] ]
 var pdum3 = [0,0,0]
 
-module.exports = function decomposeMat3(matrix, translation, scale, skew, perspective, quaternion) {
+module.exports = function decomposeMat4(matrix, translation, scale, skew, perspective, quaternion) {
     if (!translation) translation = [0,0,0]
     if (!scale) scale = [0,0,0]
     if (!skew) skew = [0,0,0]
@@ -147,7 +147,7 @@ module.exports = function decomposeMat3(matrix, translation, scale, skew, perspe
     return true
 }
 
-//will be replaced by gl-mat4 eventually
+//will be replaced by gl-vec4 eventually
 function vec4multMat4(out, a, m) {
     var x = a[0], y = a[1], z = a[2], w = a[3];
     out[0] = m[0] * x + m[4] * y + m[8] * z + m[12] * w;
