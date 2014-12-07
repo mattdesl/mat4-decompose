@@ -1,3 +1,4 @@
+/*jshint unused:true*/
 /*
 Input:  matrix      ; a 4x4 matrix
 Output: translation ; a 3 component vector
@@ -59,9 +60,7 @@ module.exports = function decomposeMat3(matrix, translation, scale, skew, perspe
     if (Math.abs(determinant(perspectiveMatrix) < 1e-8))
         return false
 
-    var a00 = tmp[0], a01 = tmp[1], a02 = tmp[2], a03 = tmp[3],
-            a10 = tmp[4], a11 = tmp[5], a12 = tmp[6], a13 = tmp[7],
-            a20 = tmp[8], a21 = tmp[9], a22 = tmp[10], a23 = tmp[11],
+    var a03 = tmp[3], a13 = tmp[7], a23 = tmp[11],
             a30 = tmp[12], a31 = tmp[13], a32 = tmp[14], a33 = tmp[15]
 
     // First, isolate perspective.
