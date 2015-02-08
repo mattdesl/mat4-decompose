@@ -11,6 +11,8 @@ Order:
 - then determines X scale, XY shear, Y scale, XZ and YZ shear, and Z scale
 - then determines quaternion rotation
 
+You may also be interested in [mat4-interpolate](https://www.npmjs.com/package/mat4-interpolate), [mat4-recompose](https://www.npmjs.com/package/mat4-recompose), and [css-mat4](https://www.npmjs.com/package/css-mat4).
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/mat4-decompose.png)](https://nodei.co/npm/mat4-decompose/)
